@@ -6,12 +6,15 @@ Isi informasi berikut sebelum Milestone 1.
 
 | Item | Isi |
 |---|---|
-| Nama dataset | `[isi nama dataset]` |
-| Sumber | `[URL BPS / Satu Data Indonesia / BMKG / HuggingFace / Kaggle]` |
-| Lisensi/ketentuan pakai | `[isi]` |
-| Ukuran | `[>= 500 MB atau > 1.000.000 baris]` |
-| Periode data | `[isi]` |
-| Unit analisis | `[isi]` |
+| Nama dataset | SIAGA Pantura: Coupled Flood and Water Stress Dataset (`flood_dataset.parquet`) |
+| Sumber | https://huggingface.co/datasets/ethanchrstian/siaga-pantura-hazard-data data dasar berasal dari GADM v4.1, ERA5 via Open-Meteo Archive API, GloFAS v4 via Open-Meteo Flood API, dan WorldPop 2020 |
+| Lisensi/ketentuan pakai | MIT untuk kompilasi dataset. Sumber data ERA5 & GloFAS mengikuti lisensi Copernicus, GADM untuk penggunaan akademik/non-komersial, dan WorldPop CC BY 4.0. |
+| Ukuran | `flood_dataset.parquet`: 1.152.432 baris, 17.1 MB |
+| Periode data | 30 Januari 2015 – 31 Desember 2024 |
+| Unit analisis | Kecamatan (district) per hari, 318 kecamatan di 18 kabupaten/kota di Pantai Utara Jawa (Pantura) |
+
+## Catatan
+- `flood_label` dihitung dari debit yang melewati persentil ke-95 tiap kecamatan, bukan dari catatan bencana. Laju label positif keseluruhan ~7.3%.
 
 ## Tempat Mencari Dataset
 
