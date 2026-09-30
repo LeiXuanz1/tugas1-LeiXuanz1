@@ -4,12 +4,12 @@ Template untuk Tugas 1 mata kuliah Analisis Big Data. Setelah repository GitHub 
 
 ## Milestone
 
-| Tahap | Target | Bukti yang dikumpulkan |
-|---|---|---|
-| Milestone 1 | Pertemuan 3 | Dataset >= 500 MB atau > 1 juta baris, `data/README.md`, dan `notebooks/01_data_profiling.ipynb` |
-| Milestone 2 | Pertemuan 5 | Cleaning dengan Polars dan profiling DuckDB `SUMMARIZE` |
-| Milestone 3 | Pertemuan 8 | Analisis temporal/ruang dan minimal 6 visualisasi interaktif |
-| Final | Pertemuan 10 | Minimal 5 insight, Dockerfile, dan dokumentasi akhir |
+| Tahap       | Target       | Bukti yang dikumpulkan                                                                           |
+| ----------- | ------------ | ------------------------------------------------------------------------------------------------ |
+| Milestone 1 | Pertemuan 3  | Dataset >= 500 MB atau > 1 juta baris, `data/README.md`, dan `notebooks/01_data_profiling.ipynb` |
+| Milestone 2 | Pertemuan 5  | Cleaning dengan Polars dan profiling DuckDB `SUMMARIZE`                                          |
+| Milestone 3 | Pertemuan 8  | Analisis temporal/ruang dan minimal 6 visualisasi interaktif                                     |
+| Final       | Pertemuan 10 | Minimal 5 insight, Dockerfile, dan dokumentasi akhir                                             |
 
 ## Output yang Diharapkan
 
@@ -24,27 +24,27 @@ Pada final submission, repository harus menghasilkan analisis yang dapat dijalan
 
 ## Kaitan dengan Materi Perkuliahan
 
-| Materi | Pertemuan | Penerapan pada Tugas 1 |
-|---|:---:|---|
-| Polars dan lazy evaluation | 2 | Profiling dan transformasi dataset besar dengan `scan_*`, expressions, dan pipeline efisien. |
-| DuckDB dan format data | 3 | Query analitik serta profiling dengan `SUMMARIZE`; gunakan Parquet bila sesuai. |
-| Data quality dan cleaning | 4 | Tangani missing values, duplikasi, outlier, dan validasi data. |
-| EDA dan visualisasi | 5 | Bangun visualisasi interaktif serta rumuskan insight analitik. |
-| Time series | 6 | Terapkan analisis pola waktu atau pola spasial yang relevan dengan dataset. |
-| Dask, NLP, dan ML | 7-9 | Opsional sebagai pengembangan jika relevan dengan skala dan pertanyaan analisis. |
-| Streamlit dan Docker | 10-11 | Dokumentasikan environment Docker; dashboard Streamlit bersifat opsional untuk Tugas 1. |
+| Materi                     | Pertemuan | Penerapan pada Tugas 1                                                                       |
+| -------------------------- | :-------: | -------------------------------------------------------------------------------------------- |
+| Polars dan lazy evaluation |     2     | Profiling dan transformasi dataset besar dengan `scan_*`, expressions, dan pipeline efisien. |
+| DuckDB dan format data     |     3     | Query analitik serta profiling dengan `SUMMARIZE`; gunakan Parquet bila sesuai.              |
+| Data quality dan cleaning  |     4     | Tangani missing values, duplikasi, outlier, dan validasi data.                               |
+| EDA dan visualisasi        |     5     | Bangun visualisasi interaktif serta rumuskan insight analitik.                               |
+| Time series                |     6     | Terapkan analisis pola waktu atau pola spasial yang relevan dengan dataset.                  |
+| Dask, NLP, dan ML          |    7-9    | Opsional sebagai pengembangan jika relevan dengan skala dan pertanyaan analisis.             |
+| Streamlit dan Docker       |   10-11   | Dokumentasikan environment Docker; dashboard Streamlit bersifat opsional untuk Tugas 1.      |
 
 ## Ringkasan Penilaian
 
 Nilai Tugas 1 berbobot 25% dari nilai akhir. Penilaian lengkap ada di dokumen spesifikasi tugas; ringkasannya sebagai berikut.
 
-| Aspek | Bobot | Indikator utama |
-|---|:---:|---|
-| Konsistensi commit dan GitHub workflow | 20% | Commit bertahap, pesan deskriptif, struktur repository rapi, dan pemeriksaan otomatis lulus. |
-| Data handling dengan Polars dan DuckDB | 25% | Pengolahan data besar efisien, memakai Polars dan DuckDB sesuai peran masing-masing. |
-| Cleaning dan data quality | 15% | Profiling, validasi, serta penanganan null dan outlier terdokumentasi. |
-| Visualisasi dan insight | 25% | Visualisasi interaktif informatif dan insight analitik yang didukung data. |
-| Reproduktivitas dan Docker | 15% | Dockerfile, dependency, dan instruksi eksekusi memungkinkan proyek dijalankan ulang. |
+| Aspek                                  | Bobot | Indikator utama                                                                              |
+| -------------------------------------- | :---: | -------------------------------------------------------------------------------------------- |
+| Konsistensi commit dan GitHub workflow |  20%  | Commit bertahap, pesan deskriptif, struktur repository rapi, dan pemeriksaan otomatis lulus. |
+| Data handling dengan Polars dan DuckDB |  25%  | Pengolahan data besar efisien, memakai Polars dan DuckDB sesuai peran masing-masing.         |
+| Cleaning dan data quality              |  15%  | Profiling, validasi, serta penanganan null dan outlier terdokumentasi.                       |
+| Visualisasi dan insight                |  25%  | Visualisasi interaktif informatif dan insight analitik yang didukung data.                   |
+| Reproduktivitas dan Docker             |  15%  | Dockerfile, dependency, dan instruksi eksekusi memungkinkan proyek dijalankan ulang.         |
 
 Target kualitas tertinggi adalah analisis yang efisien, terdokumentasi, dapat direproduksi, dan memperlihatkan proses kerja konsisten sepanjang milestone; bukan hanya hasil akhir yang terlihat baik.
 
@@ -229,8 +229,8 @@ Buka JupyterLab pada `http://localhost:8888/lab`. Konfigurasi Dockerfile menjala
 
 Isi bagian ini sebelum pengumpulan akhir.
 
-> Alat AI yang digunakan: [nama alat].
+> Alat AI yang digunakan: Claude.
 >
-> Bagian yang dibantu: [contoh: penjelasan error Polars atau review dokumentasi].
+> Bagian yang dibantu: Docker error, konsep.
 >
-> Verifikasi yang dilakukan: [contoh: menjalankan ulang kode, memeriksa dokumentasi resmi, dan memahami setiap cell].
+> Verifikasi yang dilakukan: Solving docker error, diskusi konsep, penjelasan kode.
